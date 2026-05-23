@@ -9,20 +9,21 @@
 </head>
 <body>
         <header>
-        <nav>
-            <a class="logo" href="index.html"><img src="images/incons/Logo1.webp" alt="logo" title="Logo"></a>
-            <ul>
-                <li><a href="index.html">Menu</a></li>
-                <li><a href="plates.html">Platos</a></li>
-                <li><a href="#">Recetas</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-                <li><a href="" title="Ingles/Espanol">[EN/ES]</a></li>
-            </ul>
-        </nav>
+    <nav>
+        <a class="logo" href="#"><img src="images/incons/Logo1.webp" alt="logo" title="Logo"></a>
+        <button id="hamburger-btn" class="hamburger-menu">☰</button>
+        <ul id="nav-menu">
+            <li><a href="index.html" id="nav-home">Menu</a></li>
+            <li><a href="plates.html" id="nav-plates">Platos</a></li>
+            <li><a href="#" id="nav-recipes">Recetas</a></li>
+            <li><a href="contact.html" id="nav-contact">Contacto</a></li>
+            <li><a href="#" id="lang-btn" title="Cambiar Idioma">[EN/ES]</a></li>
+        </ul>
+    </nav>
     </header>
 <main>
     <section class="main-section">
-        <h1>RECETA DEL KIMBAP (김밥)</h1>
+        <h1 id="recipe-main-title">RECETA DEL KIMBAP (김밥)</h1>
 
         <div class="main-image">
             <img src="images/recetasimg/Kimbapres.webp" alt="Ingredientes organizados para preparar kimbap sobre una superficie de cocina">
@@ -30,7 +31,7 @@
 
         <div class="list-section">
 
-            <article class="ingredientes-list">
+            <article class="ingredientes-list" id="full-ingredients-list">
                 <h2>Ingredientes Principales:</h2>
 
                 <h3>Base y Envoltura:</h3>
@@ -51,7 +52,7 @@
                 </ul>
             </article>
 
-            <article class="preparacion-list">
+            <article class="preparacion-list" id="full-prep-list">
                 <h2>Paso a Paso:</h2>
 
                 <h3>Preparacion del Arroz:</h3>
@@ -85,11 +86,12 @@
                 </ol>
             </article>
         </div>
+        
         <article class="consejo-section">
             <div class="consejo-image">
                 <img src="images/recetasimg/chef.webp" alt="Ilustración de chef coreano dando un consejo culinario">
             </div>
-            <p><b>Consejo:</b> Respeta la jerarquía de los mayores y espera a que ellos empiecen con su plato de comida.</p>
+            <p id="chef-advice"><b>Consejo:</b> Respeta la jerarquía de los mayores y espera a que ellos empiecen con su plato de comida.</p>
         </article>
     </section>
 </main>
@@ -116,5 +118,6 @@
             </ul>
         </section>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

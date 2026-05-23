@@ -145,6 +145,15 @@ footer h2 {
     height: auto;
 }
 
+.hamburger-menu {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+}
+
 /*TABLETS Pantallas:768px*/
 @media (max-width: 768px) {
     .logo img {
@@ -189,6 +198,7 @@ footer h2 {
         max-width: 400px;
         height: auto;
     }
+
     .footer-section {
         flex-direction: column;
         gap: 20px;
@@ -210,6 +220,10 @@ footer h2 {
 
 /* CELULARES Pantallas: 480px*/
 @media (max-width: 480px) {
+    .hamburger-menu {
+        display: block; 
+    }
+
     nav {
         position: static;
         flex-direction: column;
@@ -223,22 +237,29 @@ footer h2 {
     }
 
     nav ul {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        background-color: whitesmoke;
+        padding: 20px 0;
         margin-right: 0;
-        padding: 0;
         gap: 8px;
+    }
+
+    nav ul.active {
+        display: flex;
     }
 
     li {
         padding-right: 0;
+        text-align: center;
     }
 
     li a {
         margin-right: 0;
         font-size: 14px;
         padding: 6px 8px;
+        display: block;
     }
 
     .hero-section {

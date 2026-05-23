@@ -9,26 +9,27 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a class="logo" href="index.html"><img src="images/incons/Logo1.webp" alt="logo" title="Logo"></a>
-            <ul>
-                <li><a href="index.html">Menu</a></li>
-                <li><a href="plates.html">Platos</a></li>
-                <li><a href="recipe.html">Recetas</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="" title="Ingles/Espanol">[EN/ES]</a></li>
-            </ul>
-        </nav>
+    <nav>
+        <a class="logo" href="#"><img src="images/incons/Logo1.webp" alt="logo" title="Logo"></a>
+        <button id="hamburger-btn" class="hamburger-menu">☰</button>
+        <ul id="nav-menu">
+            <li><a href="index.html" id="nav-home">Menu</a></li>
+            <li><a href="plates.html" id="nav-plates">Platos</a></li>
+            <li><a href="recipe.html" id="nav-recipes">Recetas</a></li>
+            <li><a href="#" id="nav-contact">Contacto</a></li>
+            <li><a href="#" id="lang-btn" title="Cambiar Idioma">[EN/ES]</a></li>
+        </ul>
+    </nav>
     </header>
 <main>
     <section>
-        <h1>CONTACTANOS!!</h1>
+        <h1 id="contact-main-title">CONTACTANOS!!</h1>
         <article class="contact-container">
             <div class="contact-content">
                 <form action="#" aria-labelledby="titulo-contacto">
                     
                     <div>
-                        <label for="nombre">Nombre:</label>
+                        <label for="nombre" id="label-nombre">Nombre:</label>
                         <input 
                             type="text" 
                             id="nombre" 
@@ -38,7 +39,7 @@
                         />
                     </div>
                     <div>
-                        <label for="correo">Correo:</label>
+                        <label for="correo" id="label-correo">Correo:</label>
                         <input 
                             type="email" 
                             id="correo" 
@@ -48,7 +49,7 @@
                         />
                     </div>
                     <div>
-                        <label for="mensaje">Mensaje:</label>
+                        <label for="mensaje" id="label-mensaje">Mensaje:</label>
                         <textarea 
                             name="message" 
                             id="mensaje"
@@ -56,7 +57,7 @@
                             required
                         ></textarea>
                     </div>
-                    <button type="submit">Enviar</button>
+                    <button type="submit" id="btn-submit">Enviar</button>
                 </form>
             </div>
         </article>
@@ -64,7 +65,7 @@
 </main>
     <footer>
         <section>
-            <h2>Nuestras Redes!!!</h2>
+            <h2 id="footer-social-title">Nuestras Redes!!!</h2>
             <div class="social-icons">
                 <ul>
                     <li><a href="https://facebook.com" target="_blank">
@@ -83,4 +84,6 @@
             </div>
         </section>
     </footer>
+    <script src="js/script.js"></script>
+</body>
 </html>

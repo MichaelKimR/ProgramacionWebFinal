@@ -9,33 +9,35 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a class="logo" href="index.html"><img src="images/incons/Logo1.webp" alt="logo" title="Logo"></a>
-            <ul>
-                <li><a href="index.html">Menu</a></li>
-                <li><a href="#">Platos</a></li>
-                <li><a href="recipe.html">Recetas</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-                <li><a href="" title="Ingles/Espanol">[EN/ES]</a></li>
-            </ul>
-        </nav>
+    <nav>
+        <a class="logo" href="#"><img src="images/incons/Logo1.webp" alt="logo" title="Logo"></a>
+        <button id="hamburger-btn" class="hamburger-menu">☰</button>
+        <ul id="nav-menu">
+            <li><a href="index.html" id="nav-home">Menu</a></li>
+            <li><a href="#" id="nav-plates">Platos</a></li>
+            <li><a href="recipe.html" id="nav-recipes">Recetas</a></li>
+            <li><a href="contact.html" id="nav-contact">Contacto</a></li>
+            <li><a href="#" id="lang-btn" title="Cambiar Idioma">[EN/ES]</a></li>
+        </ul>
+    </nav>
     </header>
 <main>
     <section class="platos-section">
-        <h1>Platos Tradicionales</h1>
+        <h1 id="plates-main-title">Platos Tradicionales</h1>
+        
         <article class="card-container">
             <div class="card-image">
                 <img src="images/platosimg/SamGyeob.webp" alt="Samgyeopsal, panceta de cerdo coreana asada acompañada de vegetales">
             </div>
             <div class="card-content">
-                <h2>Sam Gyeob Sal (삼겹살)</h2>
-                <p>
+                <h2 id="sam-title">Sam Gyeob Sal (삼겹살)</h2>
+                <p id="sam-desc">
                     Este plato tipico es el alma de la barbacoa coreana: un festín de panceta de cerdo de "tres capas" 
                     que se cocina directamente en tu mesa hasta alcanzar una perfección dorada y crujiente.<br><br>
                     Este plato sensacional proviene de las decadas de 1960-1970. <br><br>
-                    <strong>Los ingredientes principales:</strong>
+                    <strong id="sam-ing-title">Los ingredientes principales:</strong>
                 </p>
-                <ul>
+                <ul id="sam-ingredients">
                     <li>Carne de cerdo</li>
                     <li>Lechuga</li>
                     <li>Arroz Blanco</li>
@@ -43,19 +45,20 @@
                 </ul>
             </div>
         </article>
+
         <article class="card-container">
             <div class="card-image">
                 <img src="images/platosimg/Bibimbap.webp" alt="Bibimbap servido en tazón con arroz, vegetales, huevo y carne">
             </div>
             <div class="card-content">
-                <h2>Bibimbap (비빔밥)</h2>
-                <p>
+                <h2 id="bibim-title">Bibimbap (비빔밥)</h2>
+                <p id="bibim-desc">
                     Esta maravilla es el arcoíris de la cocina coreana, que es como un festín visual que significa literalmente "arroz mezclado".
                     Es un plato que celebra la armonía y el equilibrio en cada bocado.<br><br>
                     Esta joya proviene de las decadas de 1392-1897. <br><br>
-                    <strong>Los ingredientes principales:</strong>
+                    <strong id="bibim-ing-title">Los ingredientes principales:</strong>
                 </p>
-                <ul>
+                <ul id="bibim-ingredients">
                     <li>Carne (cualquier tipo)</li>
                     <li>Vegetales (zanahoria, setas, raíces y rábano coreano)</li>
                     <li>Arroz Blanco</li>
@@ -64,19 +67,20 @@
                 </ul>
             </div>
         </article>
+
         <article class="card-container">
             <div class="card-image">
                 <img src="images/platosimg/Tteolbokki.webp" alt="Tteokbokki en salsa picante con pasteles de arroz y pescado">
             </div>
             <div class="card-content">
-                <h2>Tteokbokki (떡볶이)</h2>
-                <p>
+                <h2 id="tteok-title">Tteokbokki (떡볶이)</h2>
+                <p id="tteok-desc">
                     Es la esencia misma del "comfort food" coreano: un festín de cilindros de pastel de arroz
                     masticables y suaves bañados en una salsa roja intensa, espesa y picante.<br><br>
                     Este manjar proviene del año 1953 pero se popularizó entre 1970 y 1980. <br><br>
-                    <strong>Los ingredientes principales:</strong>
+                    <strong id="tteok-ing-title">Los ingredientes principales:</strong>
                 </p>
-                <ul>
+                <ul id="tteok-ingredients">
                     <li>Garaetteok (Pasteles de arroz)</li>
                     <li>Eomuk (Pasteles de pescado)</li>
                     <li>Caldo de anchoas y algas (Dashi)</li>
@@ -86,19 +90,20 @@
                 </ul>
             </div>
         </article>
+
         <article class="card-container">
             <div class="card-image">
                 <img src="images/platosimg/Kimbapdes.webp" alt="Kimbap coreano enrollado con arroz, vegetales y alga">
             </div>
             <div class="card-content">
-                <h2>Kimbap (김밥)</h2>
-                <p>
+                <h2 id="kimbap-title">Kimbap (김밥)</h2>
+                <p id="kimbap-desc">
                     Este famoso plato es el compañero inseparable de la cultura de Corea, un rollo 
                     vibrante y lleno de color que encapsula la tradición del hogar.<br><br>
                     Este clásico proviene de las décadas de 1910-1945. <br><br>
-                    <strong>Los ingredientes principales:</strong>
+                    <strong id="kimbap-ing-title">Los ingredientes principales:</strong>
                 </p>
-                <ul>
+                <ul id="kimbap-ingredients">
                     <li>Gim (Alga)</li>
                     <li>Danmuji (Nabo encurtido)</li>
                     <li>Arroz Blanco</li>
@@ -108,18 +113,19 @@
                 </ul>
             </div>
         </article>
+
         <article class="card-container">
             <div class="card-image">
                 <img src="images/platosimg/Doenjang.webp" alt="Doenjang-jjigae, sopa coreana de pasta de soja con tofu y vegetales">
             </div>
             <div class="card-content">
-                <h2>Doenjang-jjigae (된장찌개)</h2>
-                <p>
+                <h2 id="doen-title">Doenjang-jjigae (된장찌개)</h2>
+                <p id="doen-desc">
                     Este plato es el alma reconfortante de Corea en un caldo, con un sabor profundo que invita a pausar.<br><br>
                     Este plato histórico proviene de los años 57 a.C.-668 d.C. <br><br>
-                    <strong>Los ingredientes principales:</strong>
+                    <strong id="doen-ing-title">Los ingredientes principales:</strong>
                 </p> 
-                <ul>
+                <ul id="doen-ingredients">
                     <li>Doenjang</li>
                     <li>Caldo de anchoas</li>
                     <li>Gochugaru</li>
@@ -154,5 +160,6 @@
             </ul>
         </section>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

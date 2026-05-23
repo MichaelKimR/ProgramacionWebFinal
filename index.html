@@ -9,31 +9,32 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a class="logo" href="#"><img src="images/incons/Logo1.webp" alt="logo" title="Logo"></a>
-            <ul>
-                <li><a href="#">Menu</a></li>
-                <li><a href="plates.html">Platos</a></li>
-                <li><a href="recipe.html">Recetas</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-                <li><a href="" title="cambiar Ingles/Espanol">[EN/ES]</a></li> <!-- boton para cambiar de idioma -->
-            </ul>
-        </nav>
+    <nav>
+        <a class="logo" href="#"><img src="images/incons/Logo1.webp" alt="logo" title="Logo"></a>
+        <button id="hamburger-btn" class="hamburger-menu">☰</button>
+        <ul id="nav-menu">
+            <li><a href="#" id="nav-home">Menu</a></li>
+            <li><a href="plates.html" id="nav-plates">Platos</a></li>
+            <li><a href="recipe.html" id="nav-recipes">Recetas</a></li>
+            <li><a href="contact.html" id="nav-contact">Contacto</a></li>
+            <li><a href="#" id="lang-btn" title="Cambiar Idioma">[EN/ES]</a></li>
+        </ul>
+    </nav>
     </header>
 <main>
     <section class="hero-section">
         <div class="hero-content">
-            <h1>Gastronomia de Comida Coreana</h1>
+            <h1 id="welcome-text">Gastronomia de Comida Coreana</h1>
             <p>Un camino que despierta nuevos sabores...</p>
             <a href="#platos_destacados_section">Explorar Platos</a>
         </div>
     </section>
     <section class="intro-section">
         <div class="intro-content">
-            <h2>Introduccion</h2>
+            <h2 id="intro-title">Introduccion</h2>
             <article class="intro-body">
-                <p>
-                    Sumérgete en la cultura a través de su cocina, donde el lema "la comida es medicina" 
+                <p id="intro-text">
+                    Sumérgete en la cultura a través de su cuisine, donde el lema "la comida es medicina" 
                     define una dieta rica en nutrientes y baja en grasas.
                     Donde encontraras la vibrante experiencia del BBQ coreano en la mesa hasta la variedad 
                     de platos (banchan) que acompañan al arroz, cada comida es un banquete de 
@@ -43,9 +44,32 @@
             </article>
         </div>
     </section>
+
+    <section class="slider-section">
+        <h2 id="slider-title">Galería de Especialidades</h2>
+        <div class="slider-container">
+            <button class="slider-btn prev-btn" id="prev-slide">❮</button>
+            <div class="slider-wrapper">
+                <div class="slide active">
+                    <img src="images/homeimg/SamGyeob.webp" alt="Sam Gyeob Sal">
+                    <p class="slide-caption" id="slide-caption-1">Sam Gyeob Sal (삼겹살) - Parrilla Tradicional</p>
+                </div>
+                <div class="slide">
+                    <img src="images/homeimg/Bibimbap.webp" alt="Bibimbap">
+                    <p class="slide-caption" id="slide-caption-2">Bibimbap (비빔밥) - Arroz Mezclado Saludable</p>
+                </div>
+                <div class="slide">
+                    <img src="images/homeimg/Tteolbokki.webp" alt="Tteokbokki">
+                    <p class="slide-caption" id="slide-caption-3">Tteokbokki (떡볶i) - Pasteles de Arroz Picantes</p>
+                </div>
+            </div>
+            <button class="slider-btn next-btn" id="next-slide">❯</button>
+        </div>
+    </section>
+
     <section id="platos_destacados_section">
         <div class="platos_destacados_content">
-            <h2>Platos Destacados</h2>
+            <h2 id="plates-title">Platos Destacados</h2>
             <article class="container">
                 <h3>Sam Gyeob Sal (삼겹살)</h3>
                 <div class="card">
@@ -59,12 +83,11 @@
                 </div>
             </article>
             <article class="container">
-                <h3>Tteokbokki (떡볶이)</h3>
+                <h3>Tteokbokki (떡볶i)</h3>
                 <div class="card">
                     <img src="images/homeimg/Tteolbokki.webp" alt="Tteokbokki, pasteles de arroz coreanos en salsa picante roja">
                 </div>
             </article>
-
         </div>
     </section>
 </main>
@@ -91,6 +114,6 @@
         </ul>
     </section>
 </footer>
-
+    <script src="js/script.js"></script>
 </body>
 </html>
