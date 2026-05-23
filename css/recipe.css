@@ -1,0 +1,196 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+}
+
+/* Navigation bar styling */
+header {
+    padding: 0px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color: whitesmoke;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 3px solid black;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.logo img {
+    width: 25%;
+    height: auto;
+    margin-left: 50px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 25px;
+}
+
+nav li a {
+    color: black;
+    font-size: large;
+    font-weight: 600;
+    margin-right: 50px;
+    text-decoration: none;
+}
+
+/* Main section styling */
+main {
+    padding-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.main-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-image img {
+    border: 3px solid black;
+    border-radius: 10%;
+    width: 53%;
+    height: auto;
+}
+
+.list-section {
+    padding-left: 50px;
+    width: 80%;
+}
+
+/* Ingredient section styling */
+.ingredientes-list {
+    padding: 20px;
+}
+
+.ingredientes-list ul {
+    display: block; 
+    font-size: 20px;
+    list-style-type: disc;
+    padding-left: 40px;
+    margin-top: 10px;
+}
+
+.ingredientes-list li {
+    display: list-item; 
+    padding: 5px 0px;
+}
+
+/* Preparacion section styling */
+.preparacion-list {
+    padding: 20px;
+}
+
+/* Preparacion section styling */
+
+.preparacion-list ol {
+    display: block; 
+    font-size: 20px;
+    list-style-type: decimal;
+    padding-left: 40px;
+    margin-top: 10px;
+}
+
+.preparacion-list li::marker {
+    font-weight: bold;
+    color: black;
+}
+
+.preparacion-list li {
+    display: list-item; 
+    padding: 5px 0px;
+    font-weight: normal;
+}
+
+/* Consejo Section styling*/
+
+.consejo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 20px;
+
+    background-color: rgba(245, 255, 123, 0.84);
+    border-radius: 0px 90px 0px 90px;
+    border: 3px solid black;
+
+    width: 70%;
+    height: 100%;
+    margin: auto;
+}
+
+.consejo-section p {
+    max-width: 40%;
+}
+
+/* Footer section styling */
+
+.footer-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: whitesmoke;
+
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 80px;
+
+    border-top: 3px solid black;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.footer-logo {
+    width: 10%;
+    height: auto;
+    margin-left: 50px;
+}
+
+.footer-content {
+    list-style: none;
+    padding: 0;
+    margin-right: 50px;
+    
+    display: flex; 
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-content li {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.social-icons img {
+    width: 50px;
+    height: 50px;
+    display: block;
+}
