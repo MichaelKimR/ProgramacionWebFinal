@@ -22,8 +22,15 @@ nav {
     border-radius: 0px 0px 10px 10px;
 }
 
-.logo img{
-    width: 25%;
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+.logo img {
+    width: 200px;
     height: auto;
     margin-left: 50px;
 }
@@ -36,12 +43,13 @@ li {
 
 li a {
     color: black;
-
     font-size: large;
     font-weight: 600;
-
     margin-right: 50px;
     text-decoration: none;
+
+    display: inline-block;
+    padding: 12px 16px;
 }
 
 /*Main section styling*/
@@ -55,7 +63,7 @@ main {
 .hero-section {
     background-image: 
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0,0.5)),
-    url(../images/homeimg/PlatosK.jpg);
+    url(../images/homeimg/PlatosK.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -223,7 +231,46 @@ main {
 
 .social-icons img {
     width: 50px;
-    height: 50px;
-    display: block;
+    height: auto;
 }
 
+/* Media QUeries */
+@media (max-width: 768px) {
+
+    .hero-section {
+        width: 95%;
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .intro-body {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-body img {
+        width: 100%;
+        height: auto;
+    }
+
+    .platos_destacados_content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
