@@ -167,24 +167,139 @@ main {
     height: auto;
 }
 
-/* Media QUeries */
+/*TABLETS Pantallas:768px*/
 @media (max-width: 768px) {
+    .logo img {
+        width: 150px;
+        margin-left: 20px;
+    }
+    
+    nav ul {
+        margin-right: 10px;
+        gap: 5px;
+    }
 
-    .card-container {
+    li a {
+        margin-right: 15px;
+        font-size: medium;
+        padding: 8px 10px;
+    }
+
+    .hero-section {
+        width: 85%;
+        height: auto;
+        padding: 60px 20px;
+        margin-top: 100px;
+    }
+
+    .hero-content h1 {
+        font-size: 50px;
+    }
+
+    .intro-body {
         flex-direction: column;
-        margin-left: 0;
-        padding: 10px;
+        text-align: center;
+        padding: 0 20px;
     }
 
-    .card-content p {
-        max-width: 100%;
+    .intro-body p {
+        text-align: center;
     }
 
-    .card-image img {
+    .intro-body img {
+        width: 100%;
+        max-width: 400px;
         height: auto;
     }
+    .footer-section {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .footer-logo {
+        width: 80px;
+        margin-left: 0;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        margin-right: 0;
+        gap: 15px;
+    }
 }
-img {
-    max-width: 100%;
-    height: auto;
+
+/* CELULARES Pantallas: 480px*/
+@media (max-width: 480px) {
+    nav {
+        position: static;
+        flex-direction: column;
+        padding: 15px 0;
+    }
+
+    .logo img {
+        margin-left: 0;
+        margin-bottom: 10px;
+        width: 130px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-right: 0;
+        padding: 0;
+        gap: 8px;
+    }
+
+    li {
+        padding-right: 0;
+    }
+
+    li a {
+        margin-right: 0;
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+
+    .hero-section {
+        width: 95%;
+        margin-top: 20px;
+        padding: 40px 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .hero-content a {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .intro-content h2, 
+    .platos_destacados_content h2 {
+        font-size: 34px;
+    }
+
+    .platos_destacados_content {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 320px;
+    }
+    
+    .card {
+        height: 250px;
+    }
 }
